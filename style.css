@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+  
+
+    }
+.box.c{
+    background-color: gray;
+    height: 40%;
+    position: relative;
+    }
+
+    .box.a{
+        background-color: skyblue;
+    }
+    .box.b{
+        background-color: greenyellow;
+    }
+.stripes{
+        height: 10px;
+        width: 100%;
+        position: absolute;
+        border-top: 5px dashed black;
+        top:50%
+
+}
+p{
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: normal;
+    font-size: 100px
+}
+.bird{
+    animation-name: bird;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: normal;
+    font-size: 50px
+}
+
+@keyframes car{
+    from{
+        transform: translate(-1vw);
+    }
+    to{
+        transform: translate(105vw);
+    }
+}
+@keyframes bird{
+    to{
+        transform: translate(-1vw);
+    }
+    from{
+        transform: translate(105vw);
+    }
+}
